@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ story.title }}</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #333; /* Dark grey background */
+            font-size: 18px; /* Set the font size */
+        }
+    </style>
+</head>
+<body>
+    <div class="row justify-content-center">
+        <div class="col-9">
+            <div class="card mt-5">
+                <img src="{{ url_for('static', filename=story.image) }}" class="card-img-top" alt="{{ story.title }}">
+                <div class="card-body text-center"> <!-- Add text-center class here -->
+                    <h1 class="card-title">{{ story.title }}</h1>
+                    <!-- Collapsible answer -->
+                    <a class="btn btn-primary" data-toggle="collapse" href="#answer" role="button" aria-expanded="false" aria-controls="answer">
+                        Show/Hide Answer
+                    </a>
+                    <div class="collapse" id="answer">
+                        <div class="card card-body mt-2">
+                            {{ story.answer }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Include jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
