@@ -12,20 +12,18 @@
     </style>
 </head>
 <body>
-    <div class="row justify-content-center">
-        <div class="col-9">
-            <div class="card mt-5">
-                <img src="{{ url_for('static', filename=story.image) }}" class="card-img-top" alt="{{ story.title }}">
-                <div class="card-body text-center"> <!-- Add text-center class here -->
-                    <h1 class="card-title">{{ story.title }}</h1>
-                    <!-- Collapsible answer -->
-                    <a class="btn btn-primary" data-toggle="collapse" href="#answer" role="button" aria-expanded="false" aria-controls="answer">
-                        Show/Hide Answer
-                    </a>
-                    <div class="collapse" id="answer">
-                        <div class="card card-body mt-2">
-                            {{ story.answer }}
-                        </div>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="card w-100 mx-3 mx-md-5" style="max-width: 800px;">
+            <img src="{{ url_for('static', filename=story.image) }}" class="card-img-top img-fluid" alt="{{ story.title }}">
+            <div class="card-body text-center">
+                <h1 class="card-title">{{ story.title }}</h1>
+                <!-- Collapsible answer -->
+                <a class="btn btn-primary btn-lg btn-block py-3" data-toggle="collapse" href="#answer" role="button" aria-expanded="false" aria-controls="answer">
+                    Show/Hide Answer
+                </a>
+                <div class="collapse" id="answer">
+                    <div class="card card-body mt-2">
+                        {{ story.answer }}
                     </div>
                 </div>
             </div>

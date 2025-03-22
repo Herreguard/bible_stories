@@ -16,8 +16,8 @@ stories = [
     },
     {
         'image': 'story3.jpeg',
-        'title': 'Samen zijn we overdonderend.',
-        'answer': 'Jacobes en Johannes. De gebroederes van de donder genoemd in Markus 3:17'
+        'title': 'Mamma is de baas en samen zijn we overdonderend.',
+        'answer': 'Jacobes en Johannes. De gebroederes van de donder genoemd(boanerges) in Markus 3:17'
     },
     {
         'image': 'story4.png',
@@ -32,7 +32,7 @@ stories = [
     {
         'image': 'story6.jpeg',
         'title': 'Verzuchtend en verdwaast zocht hij buiten naar wat extra tijd voor zijn uurwerk.',
-        'answer': 'Een Egyptenaar die die zijn zandloper bijfult ten tijde van Hizkia;s langere dag. Jesaja 38:8'
+        'answer': 'Een Egyptenaar die die zijn zandloper bijvult ten tijde van Hizkia;s langere dag. Jesaja 38:8'
     },
     {
         'image': 'story7.jpeg',
